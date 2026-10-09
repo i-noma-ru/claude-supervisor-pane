@@ -1,0 +1,18 @@
+{
+  "name": "claude-supervisor-pane",
+  "metadata": {
+    "description": "Claude Code mod: a side pane that lists subagent runs and chosen shell commands with their state and elapsed time."
+  },
+  "owner": {
+    "name": "i-noma-ru"
+  },
+  "plugins": [
+    {
+      "name": "supervisor-pane",
+      "description": "A side pane that lists subagent runs and chosen shell commands with their state and elapsed time. Toggle with /supervisor.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/i-noma-ru/claude-supervisor-pane"
+    }
+  ]
+}

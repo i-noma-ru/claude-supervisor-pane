@@ -1,0 +1,44 @@
+{
+  "name": "supervisor-pane",
+  "version": "0.1.0",
+  "description": "A side pane that lists subagent runs and chosen shell commands with their state and elapsed time.",
+  "author": {
+    "name": "i-noma-ru",
+    "url": "https://github.com/i-noma-ru"
+  },
+  "homepage": "https://github.com/i-noma-ru/claude-supervisor-pane",
+  "repository": "https://github.com/i-noma-ru/claude-supervisor-pane",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "mod",
+    "subagent",
+    "pane",
+    "ui"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "agents": {
+      "type": "string",
+      "multiple": true,
+      "title": "Subagents to list",
+      "description": "subagent_type values that get a row. Leave empty to list every subagent.",
+      "default": []
+    },
+    "commands": {
+      "type": "string",
+      "multiple": true,
+      "title": "Shell commands to list",
+      "description": "Substrings; a Bash command containing one gets a row named after it. Leave empty to list no shell commands.",
+      "default": []
+    },
+    "max_rows": {
+      "type": "number",
+      "title": "Maximum rows",
+      "description": "Oldest finished rows are dropped beyond this count.",
+      "default": 30,
+      "min": 5,
+      "max": 100
+    }
+  }
+}
